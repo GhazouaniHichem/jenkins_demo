@@ -35,10 +35,11 @@ pipeline
                     steps {
                         echo "This is TEst B"
                     }
-            }
-            post {
-                success {
-                    archiveArtifacts artifacts: "**/target/*.war"
+                }
+                post {
+                    success {
+                        archiveArtifacts artifacts: "**/target/*.war"
+                    }
                 }
             }
 
