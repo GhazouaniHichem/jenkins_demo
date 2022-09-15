@@ -36,12 +36,13 @@ pipeline
                         echo "This is TEst B"
                     }
                 }
-                post {
+                
+            }
+            post {
                     success {
                         archiveArtifacts artifacts: "**/target/*.war"
                     }
                 }
-            }
 
         }
 
