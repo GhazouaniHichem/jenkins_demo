@@ -1,8 +1,8 @@
 pipeline 
 {
-
-    agent { label 'Staging' }
-
+//maven3.8.6
+    //agent { label 'Staging' }
+    agent any
     stages {
 
         stage ("Build") {
